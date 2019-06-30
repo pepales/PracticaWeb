@@ -9,3 +9,76 @@
     color: black;
     font-family: brandon-grotesque,futura-pt;
   }
+
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: unset;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      background-image: url(../img/bg.jpg);
+    }
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #8c8c8c;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+/* Defino un valor maximo para el logo (.encabezado img) para que al cambiar de resolución 
+no se haga el logo más grande de lo necesario */
+
+  .encabezado img {
+    margin-top: .5rem;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .encabezado img {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .formulario-inicio {
+      background-color: rgba(212, 212, 212, 0.75);
+      max-width: 450px;
+      margin: 3rem auto 4rem auto;
+      padding: 2rem 4rem;
+      border-radius: 10px;
+    }
+  }
+
+  form legend {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+
+  form .campo {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    margin-bottom: .8rem;
+    position: relative;
+  }
+
+  form .campo span {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-transform: uppercase;
+  }
