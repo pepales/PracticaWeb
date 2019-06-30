@@ -76,7 +76,7 @@ no se haga el logo más grande de lo necesario */
         background-color: rgba(255, 255, 255, 0.75);
         max-width: 450px;
         margin: 3em auto;
-        padding: 0 2em;
+        /* padding: 0 1em; */
     }
 }
 
@@ -87,8 +87,6 @@ no se haga el logo más grande de lo necesario */
   }
 
   form .campo {
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
     display: flex;
     margin-bottom: .8rem;
     position: relative;
@@ -111,11 +109,6 @@ no se haga el logo más grande de lo necesario */
     left: 1rem;
     font-size: .9rem;
     transition: font-size .2s ease, top .2s ease;
-  }
-
-  form .campo label.valid {
-    font-size: .6rem;
-    top: .5rem;
   }
 
   form .campo input {
